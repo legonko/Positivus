@@ -1,0 +1,31 @@
+.pagination {
+  &__list {
+    display: flex;
+    column-gap: 19px;
+    align-items: center;
+  }
+
+  &__button {
+    @include square(23px);
+    @include reset-button;
+    @include flex-center;
+
+    color: var(--color-light);
+
+    &[disabled] {
+      color: var(--color-gray-alt);
+    }
+
+    &.is-current {
+      color: var(--color-accent);
+    }
+
+    @include hover {
+      color: var(--color-accent);
+    }
+
+    svg {
+      @include square(14px);
+    }
+  }
+}

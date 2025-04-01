@@ -1,0 +1,33 @@
+.button {
+  --button-text-color: var(--color-light);
+  --button-bg-color: var(--color-dark);
+  --button-hover-text-color: var(--color-dark);
+  --button-hover-bg-color: var(--color-accent);
+
+  @include flex-center(true);
+
+  height: var(--button-height);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  color: var(--button-text-color);
+  background-color: var(--button-bg-color);
+  padding-inline: 35px;
+  font-size: 20px;
+
+  @include hover {
+    background-color: var(--button-hover-bg-color);
+    color: var(--button-hover-text-color);
+  }
+
+  &--transparent {
+    --button-bg-color: transparent;
+    --button-text-color: var(--color-dark);
+  }
+
+  &--accent {
+    --button-bg-color: var(--color-accent);
+    --button-text-color: var(--color-dark);
+    --button-hover-text-color: var(--color-accent);
+    --button-hover-bg-color: var(--color-dark);
+  }
+}
