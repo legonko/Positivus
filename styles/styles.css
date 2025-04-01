@@ -1024,6 +1024,7 @@ h1, h2, h3, h4 {
     display: grid;
     grid-template-columns: auto auto;
     row-gap: 27px;
+    padding: 40px 20px;
   }
 }
 .service-card__body {
@@ -1112,7 +1113,7 @@ h1, h2, h3, h4 {
 }
 @media (max-width: 767px) {
   .service-card__image {
-    max-width: 165px;
+    max-width: 155px;
   }
 }
 .service-card--accent-bg {

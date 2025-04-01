@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: auto auto;
     row-gap: 27px;
-    
+    padding: 40px 20px;
   }
 
   &__body {
@@ -86,7 +86,7 @@
     }
 
     @include mobile {
-      max-width: 165px;
+      max-width: 155px;
     }
   }
 
